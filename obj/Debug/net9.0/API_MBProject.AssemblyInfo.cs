@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_MBProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d0b2b2a6bf19a5e156b9ee245fa57c3d938cc2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99807304facae8dff851f4597b98263b31d4e382")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_MBProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_MBProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
