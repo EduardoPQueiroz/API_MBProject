@@ -22,136 +22,146 @@ namespace API_MBProject.Data
 
             modelBuilder.Entity<Usuario>().HasData(
 
-                new Usuario
-                {
-                    id = 1,
-                    nome = "Mariana Souza",
-                    email = "mariana.souza@eventosvip.com",
-                    senha = "mari@2025",
-                    telefone = "11980000001",
-                    endereco = "Av. Paulista, 1000 - São Paulo/SP",
-                    biografia = "Produtora de eventos corporativos e casamentos.",
-                    dtCriacao = new DateTime(2024, 3, 1),
-                    links = "https://instagram.com/mari_eventos",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 2,
-                    nome = "Carlos Menezes",
-                    email = "carlosm@agenciashow.com",
-                    senha = "carl@321",
-                    telefone = "11980000002",
-                    endereco = "Rua das Rosas, 205 - Campinas/SP",
-                    biografia = "Agente de talentos e responsável por contratações em festivais.",
-                    dtCriacao = new DateTime(2024, 3, 11),
-                    links = "https://linkedin.com/in/carlosmenezes",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 3,
-                    nome = "Fernanda Lima",
-                    email = "fernanda.lima@festprime.com",
-                    senha = "fernanda@fest",
-                    telefone = "11980000003",
-                    endereco = "Av. Atlântica, 750 - Rio de Janeiro/RJ",
-                    biografia = "Organizadora de festas privadas e aniversários de luxo.",
-                    dtCriacao = new DateTime(2024, 3, 16),
-                    links = "https://festprime.com/fernanda",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 4,
-                    nome = "José Roberto",
-                    email = "jose.roberto@prefeituraevento.gov",
-                    senha = "evento123",
-                    telefone = "11980000004",
-                    endereco = "Praça Central, 1 - Belo Horizonte/MG",
-                    biografia = "Responsável por agendamentos musicais em eventos públicos.",
-                    dtCriacao = new DateTime(2024, 3, 26),
-                    links = "",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 5,
-                    nome = "Luciana Torres",
-                    email = "luciana.torres@noitesom.com",
-                    senha = "lucitorres2025",
-                    telefone = "11980000005",
-                    endereco = "Rua Alegre, 99 - Porto Alegre/RS",
-                    biografia = "Contrata músicos para casas noturnas e bares temáticos.",
-                    dtCriacao = new DateTime(2024, 3, 31),
-                    links = "https://noitesom.com/luciana",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 6,
-                    nome = "Henrique Alves",
-                    email = "henrique.alves@casadossons.com",
-                    senha = "henri2025",
-                    telefone = "11980000006",
-                    endereco = "Rua do Som, 456 - Salvador/BA",
-                    biografia = "Dono da Casa dos Sons, especialista em shows de médio porte.",
-                    dtCriacao = new DateTime(2024, 4, 15),
-                    links = "https://casadossons.com",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 7,
-                    nome = "Patrícia Rocha",
-                    email = "patricia@festou.com.br",
-                    senha = "patfest2025",
-                    telefone = "11980000007",
-                    endereco = "Rua da Alegria, 78 - Recife/PE",
-                    biografia = "Planejadora de eventos infantis e familiares com atrações musicais.",
-                    dtCriacao = new DateTime(2024, 4, 20),
-                    links = "https://festou.com.br",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 8,
-                    nome = "Rafael Dias",
-                    email = "rafael.dias@produzshow.com",
-                    senha = "dias@show",
-                    telefone = "11980000008",
-                    endereco = "Rua Independência, 505 - Curitiba/PR",
-                    biografia = "Produtor de festivais de rock e MPB.",
-                    dtCriacao = new DateTime(2024, 4, 25),
-                    links = "https://produzshow.com",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 9,
-                    nome = "Isabela Martins",
-                    email = "isabela.martins@musicsoul.com",
-                    senha = "isa123",
-                    telefone = "11980000009",
-                    endereco = "Rua Harmonia, 300 - Florianópolis/SC",
-                    biografia = "Curadora de artistas independentes para eventos regionais.",
-                    dtCriacao = new DateTime(2024, 5, 5),
-                    links = "",
-                    tipoUsuario = TipoUsuario.Contratante
-                },
-                new Usuario
-                {
-                    id = 10,
-                    nome = "Thiago Nunes",
-                    email = "thiago.nunes@vibeeventos.com",
-                    senha = "nunes@2025",
-                    telefone = "11980000010",
-                    endereco = "Av. das Luzes, 1122 - Goiânia/GO",
-                    biografia = "Empresário do setor de entretenimento e shows.",
-                    dtCriacao = new DateTime(2024, 5, 15),
-                    links = "https://vibeeventos.com",
-                    tipoUsuario = TipoUsuario.Contratante
-                }
+                 new Usuario
+    {
+        id = 1,
+        nome = "Mariana Souza",
+        email = "mariana.souza@eventosvip.com",
+        telefone = "11980000001",
+        logradouro = "Av. Paulista",
+        numero = "1000",
+        cep = "01310-100",
+        bairro = "Bela Vista",
+        cidadde = "São Paulo",
+        uf = "SP",
+        senha = "mari@2025"
+    },
+    new Usuario
+    {
+        id = 2,
+        nome = "Carlos Oliveira",
+        email = "carlos.oliveira@fotografia.com",
+        telefone = "21980000002",
+        logradouro = "Rua das Laranjeiras",
+        numero = "200",
+        cep = "22240-003",
+        bairro = "Laranjeiras",
+        cidadde = "Rio de Janeiro",
+        uf = "RJ",
+        senha = "foto@2025"
+    },
+    new Usuario
+    {
+        id = 3,
+        nome = "Ana Beatriz Lima",
+        email = "ana.lima@buffetfest.com",
+        telefone = "31980000003",
+        logradouro = "Av. Afonso Pena",
+        numero = "1500",
+        cep = "30130-003",
+        bairro = "Centro",
+        cidadde = "Belo Horizonte",
+        uf = "MG",
+        senha = "buffet@2025"
+    },
+    new Usuario
+    {
+        id = 4,
+        nome = "Lucas Martins",
+        email = "lucas.martins@iluminacaoeventos.com",
+        telefone = "51980000004",
+        logradouro = "Rua da Aurora",
+        numero = "250",
+        cep = "90040-530",
+        bairro = "Centro Histórico",
+        cidadde = "Porto Alegre",
+        uf = "RS",
+        senha = "luz@2025"
+    },
+    new Usuario
+    {
+        id = 5,
+        nome = "Juliana Castro",
+        email = "juliana.castro@decorvip.com",
+        telefone = "11980000005",
+        logradouro = "Av. Rebouças",
+        numero = "450",
+        cep = "05402-000",
+        bairro = "Pinheiros",
+        cidadde = "São Paulo",
+        uf = "SP",
+        senha = "decor@2025"
+    },
+    new Usuario
+    {
+        id = 6,
+        nome = "Fernando Lima",
+        email = "fernando.lima@eventosmusicais.com",
+        telefone = "41980000006",
+        logradouro = "Rua XV de Novembro",
+        numero = "789",
+        cep = "80020-310",
+        bairro = "Centro",
+        cidadde = "Curitiba",
+        uf = "PR",
+        senha = "musica@2025"
+    },
+    new Usuario
+    {
+        id = 7,
+        nome = "Patrícia Nunes",
+        email = "patricia.nunes@eventoplanner.com",
+        telefone = "62980000007",
+        logradouro = "Av. T-63",
+        numero = "321",
+        cep = "74230-032",
+        bairro = "Setor Bueno",
+        cidadde = "Goiânia",
+        uf = "GO",
+        senha = "planner@2025"
+    },
+    new Usuario
+    {
+        id = 8,
+        nome = "Bruno Ferreira",
+        email = "bruno.ferreira@eventsound.com",
+        telefone = "71980000008",
+        logradouro = "Av. ACM",
+        numero = "999",
+        cep = "41830-000",
+        bairro = "Itaigara",
+        cidadde = "Salvador",
+        uf = "BA",
+        senha = "sound@2025"
+    },
+    new Usuario
+    {
+        id = 9,
+        nome = "Renata Dias",
+        email = "renata.dias@cerimonialeventos.com",
+        telefone = "85980000009",
+        logradouro = "Rua Barão de Studart",
+        numero = "567",
+        cep = "60120-000",
+        bairro = "Aldeota",
+        cidadde = "Fortaleza",
+        uf = "CE",
+        senha = "cerimonial@2025"
+    },
+    new Usuario
+    {
+        id = 10,
+        nome = "Thiago Rocha",
+        email = "thiago.rocha@techfest.com",
+        telefone = "21980000010",
+        logradouro = "Av. das Américas",
+        numero = "3500",
+        cep = "22640-102",
+        bairro = "Barra da Tijuca",
+        cidadde = "Rio de Janeiro",
+        uf = "RJ",
+        senha = "tech@2025"
+    }
             );
         }
     }

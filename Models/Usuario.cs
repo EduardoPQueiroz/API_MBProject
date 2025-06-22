@@ -11,12 +11,14 @@ namespace API_MBProject.Models
         public int id { get; set; }
         public string nome { get; set; }
         public string email { get; set; }
-        public string senha { get; set; }
         public string telefone { get; set; }
-        public string endereco { get; set; }
-        public string biografia { get; set; }
-        public DateTime dtCriacao { get; set; }
-        public string links { get; set; }
-        public TipoUsuario tipoUsuario { get; set; }
+        public string logradouro { get; set; }
+        public string numero { get; set; }
+        public string cep { get; set; }
+        public string bairro { get; set; }
+        public string cidadde { get; set; }
+        public string uf { get; set; }
+        public string senha { get; set; }
+    
     }
 }
