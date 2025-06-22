@@ -4,6 +4,7 @@ using API_MBProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_MBProject.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20250622012024_AtualizacaoInicial")]
+    partial class AtualizacaoInicial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,6 +47,10 @@ namespace API_MBProject.Migrations
                     b.Property<string>("endereco")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte[]>("fotoPerfil")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("links")
                         .IsRequired()
@@ -76,6 +83,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "mariana.souza@eventosvip.com",
                             endereco = "Av. Paulista, 1000 - São Paulo/SP",
+                            fotoPerfil = new byte[0],
                             links = "https://instagram.com/mari_eventos",
                             nome = "Mariana Souza",
                             senha = "mari@2025",
@@ -89,6 +97,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 3, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "carlosm@agenciashow.com",
                             endereco = "Rua das Rosas, 205 - Campinas/SP",
+                            fotoPerfil = new byte[0],
                             links = "https://linkedin.com/in/carlosmenezes",
                             nome = "Carlos Menezes",
                             senha = "carl@321",
@@ -102,6 +111,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "fernanda.lima@festprime.com",
                             endereco = "Av. Atlântica, 750 - Rio de Janeiro/RJ",
+                            fotoPerfil = new byte[0],
                             links = "https://festprime.com/fernanda",
                             nome = "Fernanda Lima",
                             senha = "fernanda@fest",
@@ -115,6 +125,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 3, 26, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "jose.roberto@prefeituraevento.gov",
                             endereco = "Praça Central, 1 - Belo Horizonte/MG",
+                            fotoPerfil = new byte[0],
                             links = "",
                             nome = "José Roberto",
                             senha = "evento123",
@@ -128,6 +139,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 3, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "luciana.torres@noitesom.com",
                             endereco = "Rua Alegre, 99 - Porto Alegre/RS",
+                            fotoPerfil = new byte[0],
                             links = "https://noitesom.com/luciana",
                             nome = "Luciana Torres",
                             senha = "lucitorres2025",
@@ -141,6 +153,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 4, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "henrique.alves@casadossons.com",
                             endereco = "Rua do Som, 456 - Salvador/BA",
+                            fotoPerfil = new byte[0],
                             links = "https://casadossons.com",
                             nome = "Henrique Alves",
                             senha = "henri2025",
@@ -154,6 +167,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 4, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "patricia@festou.com.br",
                             endereco = "Rua da Alegria, 78 - Recife/PE",
+                            fotoPerfil = new byte[0],
                             links = "https://festou.com.br",
                             nome = "Patrícia Rocha",
                             senha = "patfest2025",
@@ -167,6 +181,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "rafael.dias@produzshow.com",
                             endereco = "Rua Independência, 505 - Curitiba/PR",
+                            fotoPerfil = new byte[0],
                             links = "https://produzshow.com",
                             nome = "Rafael Dias",
                             senha = "dias@show",
@@ -180,6 +195,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "isabela.martins@musicsoul.com",
                             endereco = "Rua Harmonia, 300 - Florianópolis/SC",
+                            fotoPerfil = new byte[0],
                             links = "",
                             nome = "Isabela Martins",
                             senha = "isa123",
@@ -193,6 +209,7 @@ namespace API_MBProject.Migrations
                             dtCriacao = new DateTime(2024, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             email = "thiago.nunes@vibeeventos.com",
                             endereco = "Av. das Luzes, 1122 - Goiânia/GO",
+                            fotoPerfil = new byte[0],
                             links = "https://vibeeventos.com",
                             nome = "Thiago Nunes",
                             senha = "nunes@2025",

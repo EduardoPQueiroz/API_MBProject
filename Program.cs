@@ -3,9 +3,10 @@ using API_MBProject.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DataContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocal"));
-});
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("ConexaoLocal"),
+        sqlOptions => sqlOptions.EnableRetryOnFailure()
+    ));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

@@ -81,7 +81,7 @@ namespace API_MBProject.Controllers
             }
             catch (System.Exception ex)
             {
-                return BadRequest(ex.Message);
+                 return BadRequest(ex.InnerException?.Message ?? ex.Message);
             }
         }
 
