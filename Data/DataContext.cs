@@ -32,7 +32,7 @@ namespace API_MBProject.Data
         numero = "1000",
         cep = "01310-100",
         bairro = "Bela Vista",
-        cidadde = "São Paulo",
+        cidade = "São Paulo",
         uf = "SP",
         senha = "mari@2025"
     },
@@ -46,7 +46,7 @@ namespace API_MBProject.Data
         numero = "200",
         cep = "22240-003",
         bairro = "Laranjeiras",
-        cidadde = "Rio de Janeiro",
+        cidade = "Rio de Janeiro",
         uf = "RJ",
         senha = "foto@2025"
     },
@@ -60,7 +60,7 @@ namespace API_MBProject.Data
         numero = "1500",
         cep = "30130-003",
         bairro = "Centro",
-        cidadde = "Belo Horizonte",
+        cidade = "Belo Horizonte",
         uf = "MG",
         senha = "buffet@2025"
     },
@@ -74,7 +74,7 @@ namespace API_MBProject.Data
         numero = "250",
         cep = "90040-530",
         bairro = "Centro Histórico",
-        cidadde = "Porto Alegre",
+        cidade = "Porto Alegre",
         uf = "RS",
         senha = "luz@2025"
     },
@@ -88,7 +88,7 @@ namespace API_MBProject.Data
         numero = "450",
         cep = "05402-000",
         bairro = "Pinheiros",
-        cidadde = "São Paulo",
+        cidade = "São Paulo",
         uf = "SP",
         senha = "decor@2025"
     },
@@ -102,7 +102,7 @@ namespace API_MBProject.Data
         numero = "789",
         cep = "80020-310",
         bairro = "Centro",
-        cidadde = "Curitiba",
+        cidade = "Curitiba",
         uf = "PR",
         senha = "musica@2025"
     },
@@ -116,7 +116,7 @@ namespace API_MBProject.Data
         numero = "321",
         cep = "74230-032",
         bairro = "Setor Bueno",
-        cidadde = "Goiânia",
+        cidade = "Goiânia",
         uf = "GO",
         senha = "planner@2025"
     },
@@ -130,7 +130,7 @@ namespace API_MBProject.Data
         numero = "999",
         cep = "41830-000",
         bairro = "Itaigara",
-        cidadde = "Salvador",
+        cidade = "Salvador",
         uf = "BA",
         senha = "sound@2025"
     },
@@ -144,7 +144,7 @@ namespace API_MBProject.Data
         numero = "567",
         cep = "60120-000",
         bairro = "Aldeota",
-        cidadde = "Fortaleza",
+        cidade = "Fortaleza",
         uf = "CE",
         senha = "cerimonial@2025"
     },
@@ -158,7 +158,7 @@ namespace API_MBProject.Data
         numero = "3500",
         cep = "22640-102",
         bairro = "Barra da Tijuca",
-        cidadde = "Rio de Janeiro",
+        cidade = "Rio de Janeiro",
         uf = "RJ",
         senha = "tech@2025"
     }
