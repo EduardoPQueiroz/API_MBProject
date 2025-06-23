@@ -39,13 +39,23 @@ jobs:
     runs-on: windows-latest
     needs: build
     
-    
+    permissions:
+      id-token: write #This is required for requesting the JWT
+      contents: read #This is required for actions/checkout
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
           name: .net-app
       
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_33F8887B24F24BE583C922D0142C47A3 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_49528B5126CF48E8A88EC9C634B4BAF7 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1A76C96B63C4493BAA1E2D46547131CA }}
+
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
@@ -53,4 +63,4 @@ jobs:
           app-name: 'majorapi'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_97F4EB2E0B5B471993FAFE3323F1B61F }}
+          
